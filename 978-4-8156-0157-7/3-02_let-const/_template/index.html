@@ -30,8 +30,25 @@
 <script>
     'use strict';
 
-    let answer = window.prompt('ヘルプを見ますか？');
+    const answer = window.prompt('ヘルプを見ますか？');
     //window.alert(answer);
+    //console.log(answer);
+    // 「==」でも動くが予想外な動きをすることがあるため最近では使用されなくなっているらしい
+    if(answer === 'yes') {
+        window.alert('タップでジャンプ、障害物をよけます。');
+    }
+
+    /*
+    let answer = 'yes';
+    console.log(answer);
+    answer = 'no';
+    console.log(answer);
+    */
+
+    // 定数
+    //const answer = window.prompt('ヘルプを見ますか？');
+    //console.log(answer);
+    //answer = 'no'; // Uncaught TypeError: Assignment to constant variable.
     //console.log(answer);
 </script>
 </body>
